@@ -7,7 +7,7 @@ function scrub( obj )  {
 
     Object.keys(obj).forEach( key => {
 
-        if ( key === 'username' || key === 'name') {
+        if ( key === 'username' || key === 'name' || key === 'password') {
             obj[key] = "******"
         } else if( key === 'email') {
             const split = obj[key].split('@');
