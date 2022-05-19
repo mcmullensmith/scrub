@@ -1,9 +1,9 @@
 # Scrub
-Scrub takes in an object and changes the username, name, and the username in an email address to '******';
+Scrub takes in an object and changes the username, name, password and the username in an email address to '******';
 
 Scrub does not have any dependencies to run but you will need to run `npm install` to install Jest for testing.
 
-To use scrub simply require the module in your javascript file. You may pass individual objects or objects in an array.
+To use scrub simply require the module in your javascript file. `const scrub = require('./scrub');`. You may pass individual objects or objects in an array to the scrub function.
 
 ```
 const scrub = require('./scrub');
@@ -45,3 +45,5 @@ Each line of log.txt will contain an object like:
 There are two tests in `scrub.test.js`. The first test checks for a single object instance and the second test checks for a nested object instance.
 
 To run the test run `npm test` in the command line.
+
+Happy scrubbing!
